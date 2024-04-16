@@ -19,7 +19,7 @@ pipeline {
       stage("package"){
           steps{
               echo 'building the artifacts'
-              sh 'mvn package -DskipTests
+              sh 'mvn package -DskipTests'
           }
       }
   }
