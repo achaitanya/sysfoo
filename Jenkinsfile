@@ -22,18 +22,6 @@ pipeline {
       }
     }
 
-    stage('sleep') {
-      steps {
-        sleep 5
-      }
-    }
-
-    stage('Artifacts') {
-      steps {
-        archiveArtifacts 'target/*.war'
-      }
-    }
-
   }
   tools {
     maven 'Maven 3.6.3'
