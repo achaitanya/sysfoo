@@ -31,8 +31,8 @@ pipeline {
       parallel {
         stage('package') {
           agent {
-            dockerfile {
-              filename 'maven:3.6.3-jdk-11-slim'
+            docker {
+              image 'maven:3.6.3-jdk-11-slim'
             }
 
           }
